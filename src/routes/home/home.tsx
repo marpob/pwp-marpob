@@ -29,33 +29,59 @@ export default function Home ({loaderData}: Route.ComponentProps) {
                         <img src="images/Martin_Poboril.jpg" alt="Martin Poboril"/>
                     </div>
                     <div className="basis-2/3 md:mx-0 mx-8">
-                        <p className="mb-4">I am Martin, web developer and tennis coach. My passion is to </p>
+                        <p className="mb-4">I am Martin, web developer and tennis coach. My two biggest passions
+                        are web development and tennis. In 2013 I graduated from Oklahoma Christian University with
+                        bachelor degree in Information Technology. After college I wanted to be a professional tennis
+                        player, but after while I realized I might be a better in coaching tennis young kids. My first
+                        big experience was to coach Brenda Fruhvirtova who was at that time 12 years old and one of the
+                        best junior on the world in her age group. While coaching I would be creating websites for people
+                        I know.</p>
 
-                        <p>It is a long established fact that a reader will be distracted by the readable content
-                            of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                            more-or-less normal distribution of letters, as opposed to using 'Content here, content
-                            here', making it look like readable English. Many desktop publishing packages and web
-                            page editors now use Lorem Ipsum as their.</p>
+                        <p>For almost 8 years I worked as a match video analyst for Czech FedCup team. One of my jobs was also
+                        to improve UI/UX design of the software we were working with. In 2016 I joined a company called
+                        Vistasport where we were providing live streaming of tennis matches. I was in charge of the live
+                        streaming department and helping with designing web solutions for our clients. More I was doing
+                        this work, more I wanted to be involved in coding of the web solutions. On the end of 2025 I started
+                        to learn frontend and on the start of the 2026 I joined full stack Deep Dive Bootcamp. I am
+                        so grateful for all the opportunities and learning experiences I can be part of. My goal is to
+                        be better everyday.</p>
                     </div>
                 </div>
             </section>
 
             <section className="mb-8 py-16 bg-blue-500">
                 <h2 className="text-4xl text-white font-bold text-center">Web development Portfolio</h2>
+
                 <div className="container mx-auto p-16 flex gap-16 md:flex-row flex-col items-center">
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
-                        <img src="images/image400.png" alt="Image"/>
+                        <a href="https://www.jakubnicod.com/" target="_blank">
+                            <img src="images/Jakub_Nicod_Web.jpg" alt="Image"/>
+                        </a>
+                        <h2 className="text-white font-bold text-center mt-4 text-xl">Jakub Nicod</h2>
                     </div>
+
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
-                        <img src="images/image400.png" alt="Image"/>
+                        <a href="http://www.solincosports.eu/" target="_blank">
+                            <img src="images/Solinco_Web.jpg" alt="Image"/>
+                        </a>
+                        <h2 className="text-white font-bold text-center mt-4 text-xl">Solinco</h2>
                     </div>
+
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
-                        <img src="images/image400.png" alt="Image"/>
+                        <a href="https://www.ctsv.cz/" target="_blank">
+                            <img src="images/ctsv.jpg" alt="Image"/>
+                        </a>
+                        <h2 className="text-white font-bold text-center mt-4 text-xl">CTSV</h2>
                     </div>
+
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
-                        <img src="images/image400.png" alt="Image"/>
+                        <a href="https://tenis-hajnovka.cz/" target="_blank">
+                            <img src="images/hajnovka.jpg" alt="Image"/>
+                        </a>
+                        <h2 className="text-white font-bold text-center mt-4 text-xl">Hajnovka</h2>
                     </div>
                 </div>
+
             </section>
 
             <section className="py-16">
