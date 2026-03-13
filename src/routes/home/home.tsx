@@ -1,29 +1,38 @@
-import type { Route } from "./+types/home";
+import {useLanguage} from "../../context/LanguageContext.tsx";
 
-export async function loader({ params }: Route.LoaderArgs) {
-    const lan = await params.lan;
 
-    return { lan };
-}
+export default function Home () {
 
-export default function Home ({loaderData}: Route.ComponentProps) {
-    // const{lan} = loaderData
-    console.log(loaderData)
+    const text = {
+        en: {
+            heading: "Martin Poboril",
+            subtitle: "Full Stack Web Developer and Tennis Coach",
+            aboutMe: "About Me",
+            // ...add all your English strings here
+        },
+        cz: {
+            heading: "Martin Pobořil",
+            subtitle: "Full-Stack vývojář a tenisový trenér",
+            aboutMe: "O mně",
+            // ...add all your Czech strings here
+        },
+    };
+
+    const { lang } = useLanguage();
+    const t = text[lang]
 
     return (
         <>
             <section
                 className="overflow-hidden block mt-6 bg-center bg-no-repeat bg-dark bg-blue-500 bg-blend-multiply">
                 <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-                    <h1 className="mb-6 text-4xl font-bold tracking-tighter text-white md:text-5xl lg:text-6xl">Martin
-                        Poboril</h1>
-                    <p className="mb-8 text-base font-normal text-white md:text-xl sm:px-16 lg:px-48">Full Stack Web
-                        Developer and Tennis Coach</p>
+                    <h1 className="mb-6 text-4xl font-bold tracking-tighter text-white md:text-5xl lg:text-6xl">{t.heading}</h1>
+                    <p className="mb-8 text-base font-normal text-white md:text-xl sm:px-16 lg:px-48">{t.subtitle}</p>
                 </div>
             </section>
 
             <section className="mb-8 py-16">
-                <h2 className="text-4xl font-bold text-center">About Me</h2>
+                <h2 className="text-4xl font-bold text-center">{t.aboutMe}</h2>
                 <div className="mx-auto px-16 container flex gap-16 md:flex-row flex-col items-center">
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
                         <img src="images/Martin_Poboril.jpg" alt="Martin Poboril"/>
@@ -62,7 +71,7 @@ export default function Home ({loaderData}: Route.ComponentProps) {
 
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
                         <a href="http://www.solincosports.eu/" target="_blank">
-                            <img src="images/Solinco_Web.jpg" alt="Image"/>
+                            <img src="images/Web_Photo_Editor.jpg" alt="Image"/>
                         </a>
                         <h2 className="text-white font-bold text-center mt-4 text-xl">Solinco</h2>
                     </div>
@@ -124,7 +133,7 @@ export default function Home ({loaderData}: Route.ComponentProps) {
                             <label htmlFor="message"
                                    className="block mb-2 text-sm font-medium text-white dark:text-gray-400">Your
                                 message</label>
-                            <textarea id="message" rows="6"
+                            <textarea id="message" rows={6}
                                       className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                                       placeholder="Leave a message..."></textarea>
                         </div>
