@@ -8,13 +8,34 @@ export default function Home () {
             heading: "Martin Poboril",
             subtitle: "Full Stack Web Developer and Tennis Coach",
             aboutMe: "About Me",
-            // ...add all your English strings here
+            aboutMeText: "I am Martin, web developer and tennis coach. My two biggest passions\n" +
+                "are web development and tennis. In 2013 I graduated from Oklahoma Christian University with\n" +
+                "bachelor degree in Information Technology. After college I wanted to be a professional tennis\n" +
+                "player, but after while I realized I might be a better in coaching tennis young kids. My first\n" +
+                "big experience was to coach Brenda Fruhvirtova who was at that time 12 years old and one of the\n" +
+                "best junior on the world in her age group. While coaching I would be creating websites for people\n" +
+                "I know.",
+            aboutMeTextSec: "For almost 8 years I worked as a match video analyst for Czech FedCup team. One of my jobs was also\n" +
+                "to improve UI/UX design of the software we were working with. In 2016 I joined a company called\n" +
+                "Vistasport where we were providing live streaming of tennis matches. I was in charge of the live\n" +
+                "streaming department and helping with designing web solutions for our clients. More I was doing\n" +
+                "this work, more I wanted to be involved in coding of the web solutions. On the end of 2025 I started\n" +
+                "to learn frontend and on the start of the 2026 I joined full stack Deep Dive Bootcamp. I am\n" +
+                "so grateful for all the opportunities and learning experiences I can be part of. My goal is to\n" +
+                "be better everyday.",
+            WebPort: "Web Development Portfolio",
+            ctst: "CTSV",
+            tennis: "Tennis Achievements",
         },
         cz: {
             heading: "Martin Pobořil",
-            subtitle: "Full-Stack vývojář a tenisový trenér",
+            subtitle: "Full-Stack developer a tenisový trenér",
             aboutMe: "O mně",
-            // ...add all your Czech strings here
+            aboutMeText: "Jsem Martin, webový vývojář a tenisový trenér. Mé dvě největší vášně jsou webový vývoj a tenis. V roce 2013 jsem absolvoval Oklahoma Christian University s bakalářským titulem v oboru informačních technologií. Po vysoké škole jsem se chtěl stát profesionálním tenistou, ale časem jsem si uvědomil, že bych mohl být lepším trénérem malých tenistů. Mojí první velkou zkušeností bylo trénování Brendy Fruhvirtové, které bylo v té době 12 let a byla jednou z nejlepších juniorek na světě ve své věkové kategorii. Během trénování jsem vytvářel webové stránky pro lidi, které znám.",
+            aboutMeTextSec: "Téměř 8 let jsem pracoval jako analytik zápasových videí pro český FedCup tým. Jedním z mých úkolů bylo také vylepšovat UI/UX design softwaru, se kterým jsme pracovali. V roce 2016 jsem nastoupil do společnosti s názvem Vistasport, kde jsme poskytovali živé streamování tenisových zápasů. Měl jsem na starosti oddělení živého streamování a pomáhal jsem s návrhem webových řešení pro naše klienty. Čím více jsem tuto práci dělal, tím více jsem se chtěl podílet na kódování webových řešení. Na konci roku 2025 jsem se začal učit frontend a na začátku roku 2026 jsem se připojil k full-stack Deep Dive Bootcampu. Jsem velmi vděčný za všechny příležitosti a vzdělávací zkušenosti, kterých se můžu zúčastnit. Mým cílem je být každý den lepší.",
+            WebPort: "Moje práce",
+            ctst: "ČTSV",
+            tennis: "Tenisové úspěchy",
         },
     };
 
@@ -38,28 +59,14 @@ export default function Home () {
                         <img src="images/Martin_Poboril.jpg" alt="Martin Poboril"/>
                     </div>
                     <div className="basis-2/3 md:mx-0 mx-8">
-                        <p className="mb-4">I am Martin, web developer and tennis coach. My two biggest passions
-                        are web development and tennis. In 2013 I graduated from Oklahoma Christian University with
-                        bachelor degree in Information Technology. After college I wanted to be a professional tennis
-                        player, but after while I realized I might be a better in coaching tennis young kids. My first
-                        big experience was to coach Brenda Fruhvirtova who was at that time 12 years old and one of the
-                        best junior on the world in her age group. While coaching I would be creating websites for people
-                        I know.</p>
-
-                        <p>For almost 8 years I worked as a match video analyst for Czech FedCup team. One of my jobs was also
-                        to improve UI/UX design of the software we were working with. In 2016 I joined a company called
-                        Vistasport where we were providing live streaming of tennis matches. I was in charge of the live
-                        streaming department and helping with designing web solutions for our clients. More I was doing
-                        this work, more I wanted to be involved in coding of the web solutions. On the end of 2025 I started
-                        to learn frontend and on the start of the 2026 I joined full stack Deep Dive Bootcamp. I am
-                        so grateful for all the opportunities and learning experiences I can be part of. My goal is to
-                        be better everyday.</p>
+                        <p className="mb-4">{t.aboutMeText}</p>
+                        <p>{t.aboutMeTextSec}</p>
                     </div>
                 </div>
             </section>
 
             <section className="mb-8 py-16 bg-blue-500">
-                <h2 className="text-4xl text-white font-bold text-center">Web development Portfolio</h2>
+                <h2 className="text-4xl text-white font-bold text-center">{t.WebPort}</h2>
 
                 <div className="container mx-auto p-16 flex gap-16 md:flex-row flex-col items-center">
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
@@ -71,7 +78,7 @@ export default function Home () {
 
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
                         <a href="http://www.solincosports.eu/" target="_blank">
-                            <img src="images/Web_Photo_Editor.jpg" alt="Image"/>
+                            <img src="images/Solinco_Web.jpg" alt="Image"/>
                         </a>
                         <h2 className="text-white font-bold text-center mt-4 text-xl">Solinco</h2>
                     </div>
@@ -80,7 +87,7 @@ export default function Home () {
                         <a href="https://www.ctsv.cz/" target="_blank">
                             <img src="images/ctsv.jpg" alt="Image"/>
                         </a>
-                        <h2 className="text-white font-bold text-center mt-4 text-xl">CTSV</h2>
+                        <h2 className="text-white font-bold text-center mt-4 text-xl">{t.ctst}</h2>
                     </div>
 
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
@@ -94,17 +101,21 @@ export default function Home () {
             </section>
 
             <section className="py-16">
-                <h2 className="text-4xl font-bold text-center">Tennis Portfolio</h2>
+                <h2 className="text-4xl font-bold text-center">{t.tennis}</h2>
                 <div className="container mx-auto p-16 flex gap-16 md:flex-row flex-col items-center">
+
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
                         <img src="images/image400.png" alt="Image"/>
                     </div>
+
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
                         <img src="images/image400.png" alt="Image"/>
                     </div>
+
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
                         <img src="images/image400.png" alt="Image"/>
                     </div>
+
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
                         <img src="images/image400.png" alt="Image"/>
                     </div>
