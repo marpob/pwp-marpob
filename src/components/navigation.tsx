@@ -6,7 +6,7 @@ export function Navigation() {
     return (
         <Navbar fluid rounded className={'border-6 border-gray-200 bg-gray-100'}>
             <NavbarBrand href="/">
-                <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Martin</span>
+                <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Martin Poboril</span>
             </NavbarBrand>
             <NavbarToggle />
             <NavbarCollapse>

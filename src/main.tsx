@@ -10,7 +10,7 @@ import WebDevelopment from "./routes/webdevelop/web-development.tsx";
 import { LanguageProvider } from "./context/LanguageContext.tsx";
 // import App from "./context/LanguageContext.tsx";
 // import About from "./routes/about/about.tsx";
-// import {FooterBlack} from "./components/footer.tsx";
+import FooterBlack from "./components/FooterBlack.tsx";
 
 
 createRoot(document.getElementById('root')!).render(
@@ -21,13 +21,12 @@ createRoot(document.getElementById('root')!).render(
           <Routes>
             <Route element={<RootLayout />} >
               <Route  index element={<Home />}/>
-                {/*<Route path={'/:lan'} element={<Home/>}/>*/}
               <Route path={'/tennis/'} element={<Tennis/>}/>
               <Route path={'/web-development'} element={<WebDevelopment/>}/>
                 {/*<Route path={'/LanguageContext'} element={<LanguageProvider/>}/>*/}
             </Route>
           </Routes>
-            {/*<FooterBlack/>*/}
+            <FooterBlack/>
         </BrowserRouter>
       </LanguageProvider>
   </StrictMode>,

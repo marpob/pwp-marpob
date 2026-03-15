@@ -25,7 +25,12 @@ export default function Home () {
                 "be better everyday.",
             WebPort: "Web Development Portfolio",
             ctst: "CTSV",
-            tennis: "Tennis Achievements",
+            tennis: "Tennis Achievements/Skills",
+            tennNaia: "2012 NAIA Men's Tennis Champion with Oklahoma Christian University",
+            brenda: "2018 - 2019, Personal Tennis Coach of Brenda Fruhvirtova (one of the best junior on the world under the age of 14)",
+            fedcup: "2016 - 2022 Video data editor for Czech FedCup Team",
+            kontakt: "Contact me",
+            email: "Your email",
         },
         cz: {
             heading: "Martin Pobořil",
@@ -35,7 +40,12 @@ export default function Home () {
             aboutMeTextSec: "Téměř 8 let jsem pracoval jako analytik zápasových videí pro český FedCup tým. Jedním z mých úkolů bylo také vylepšovat UI/UX design softwaru, se kterým jsme pracovali. V roce 2016 jsem nastoupil do společnosti s názvem Vistasport, kde jsme poskytovali živé streamování tenisových zápasů. Měl jsem na starosti oddělení živého streamování a pomáhal jsem s návrhem webových řešení pro naše klienty. Čím více jsem tuto práci dělal, tím více jsem se chtěl podílet na kódování webových řešení. Na konci roku 2025 jsem se začal učit frontend a na začátku roku 2026 jsem se připojil k full-stack Deep Dive Bootcampu. Jsem velmi vděčný za všechny příležitosti a vzdělávací zkušenosti, kterých se můžu zúčastnit. Mým cílem je být každý den lepší.",
             WebPort: "Moje práce",
             ctst: "ČTSV",
-            tennis: "Tenisové úspěchy",
+            tennis: "Tenisové úspěchy/dovednosti",
+            tennNaia: "2012, NAIA Vítěz národního tenisového mistrovství v USA",
+            brenda: "2018 - 2019, Osobní tenisový trenér Brendy Fruhvirotvé (jedna z nejlepších juniorek na světě do 14ti let)",
+            fedcup: "2016 - 2022 Zpracování dat z videa pro český FudCupový team",
+            kontakt: "Kontakt",
+            email: "E-mail",
         },
     };
 
@@ -71,28 +81,28 @@ export default function Home () {
                 <div className="container mx-auto p-16 flex gap-16 md:flex-row flex-col items-center">
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
                         <a href="https://www.jakubnicod.com/" target="_blank">
-                            <img src="images/Jakub_Nicod_Web.jpg" alt="Image"/>
+                            <img src="images/Jakub_Nicod_Web.jpg" alt="Jakub Nicod"/>
                         </a>
                         <h2 className="text-white font-bold text-center mt-4 text-xl">Jakub Nicod</h2>
                     </div>
 
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
                         <a href="http://www.solincosports.eu/" target="_blank">
-                            <img src="images/Solinco_Web.jpg" alt="Image"/>
+                            <img src="images/Solinco_Web.jpg" alt="Solinco Tennis Products"/>
                         </a>
                         <h2 className="text-white font-bold text-center mt-4 text-xl">Solinco</h2>
                     </div>
 
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
                         <a href="https://www.ctsv.cz/" target="_blank">
-                            <img src="images/ctsv.jpg" alt="Image"/>
+                            <img src="images/ctsv.jpg" alt="Český tenisový svaz hráčů na vozíku"/>
                         </a>
                         <h2 className="text-white font-bold text-center mt-4 text-xl">{t.ctst}</h2>
                     </div>
 
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
                         <a href="https://tenis-hajnovka.cz/" target="_blank">
-                            <img src="images/hajnovka.jpg" alt="Image"/>
+                            <img src="images/hajnovka.jpg" alt="Tenisový klub Hajnovka Praha"/>
                         </a>
                         <h2 className="text-white font-bold text-center mt-4 text-xl">Hajnovka</h2>
                     </div>
@@ -100,50 +110,56 @@ export default function Home () {
 
             </section>
 
-            <section className="py-16">
+            <section className="mb-8">
                 <h2 className="text-4xl font-bold text-center">{t.tennis}</h2>
-                <div className="container mx-auto p-16 flex gap-16 md:flex-row flex-col items-center">
-
+                <div className="mx-auto px-16 container flex gap-16 md:flex-row flex-col items-center">
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
-                        <img src="images/image400.png" alt="Image"/>
+                        <img src="images/naia_tennis.jpg" alt="Martin Poboril"/>
                     </div>
-
-                    <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
-                        <img src="images/image400.png" alt="Image"/>
+                    <div className="basis-2/3 md:mx-0 mx-8">
+                        <p className="text-2xl">{t.tennNaia}</p>
                     </div>
+                </div>
+            </section>
 
-                    <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
-                        <img src="images/image400.png" alt="Image"/>
+            <section className="mb-8">
+                <div className="mx-auto px-16 container flex gap-16 md:flex-row flex-col items-center">
+                    <div className="basis-1/3 w-1/2 md:mx-0mx-16">
+                        <img src="images/Czech_FedCup_team.jpg" alt="Czech Tennis FedCup Team"/>
                     </div>
+                    <div className="basis-2/3 md:mx-0 mx-8">
+                        <p className="text-2xl">{t.fedcup}</p>
+                    </div>
+                </div>
+            </section>
 
-                    <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
-                        <img src="images/image400.png" alt="Image"/>
+            <section className="mb-8">
+                <div className="mx-auto px-16 container flex gap-16 md:flex-row flex-col items-center">
+                    <div className="basis-1/3 w-1/2 md:mx-0mx-16">
+                        <img src="images/Brenda_Fruhvirtova.jpg" alt="Tennis coach of Brenda Fruhvirtova"/>
+                    </div>
+                    <div className="basis-2/3 md:mx-0 mx-8">
+                        <p className="text-2xl">{t.brenda}</p>
                     </div>
                 </div>
             </section>
 
             <section className="bg-blue-500 dark:bg-gray-900">
                 <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white dark:text-white">Contact
-                        Me</h2>
+                    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white dark:text-white">{t.kontakt}</h2>
                     <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl"></p>
                     <form action="#" className="space-y-8">
                         <div>
                             <label htmlFor="email"
-                                   className="block mb-2 text-sm font-medium text-white dark:text-gray-300">Your
-                                email</label>
+                                   className="block mb-2 text-sm font-medium text-white dark:text-gray-300">{t.email}</label>
                             <input type="email" id="email"
                                    className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                                    placeholder="name@email.com" required/>
                         </div>
-                        {/*<div>*/}
-                        {/*    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>*/}
-                        {/*    <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>*/}
-                        {/*</div>*/}
+
                         <div className="sm:col-span-2">
                             <label htmlFor="message"
-                                   className="block mb-2 text-sm font-medium text-white dark:text-gray-400">Your
-                                message</label>
+                                   className="block mb-2 text-sm font-medium text-white dark:text-gray-400">Your message</label>
                             <textarea id="message" rows={6}
                                       className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                                       placeholder="Leave a message..."></textarea>
