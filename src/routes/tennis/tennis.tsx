@@ -69,7 +69,7 @@ export default function Tennis () {
                 <h2 className="text-4xl font-bold text-center">{t.aboutMe}</h2>
                 <div className="mx-auto px-16 container flex gap-16 md:flex-row flex-col items-center">
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
-                        <img src="images/Martin_Poboril.jpg" alt="Martin Poboril"/>
+                        <img src="/Martin_Poboril.jpg" alt="Martin Poboril"/>
                     </div>
                     <div className="basis-2/3 md:mx-0 mx-8">
                         <p className="mb-4">{t.aboutMeText}</p>
@@ -82,7 +82,7 @@ export default function Tennis () {
                 <h2 className="text-4xl font-bold text-center">{t.tennis}</h2>
                 <div className="mx-auto px-16 container flex gap-16 md:flex-row flex-col items-center">
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
-                        <img src="images/naia_tennis.jpg" alt="Martin Poboril"/>
+                        <img src="/naia_tennis.jpg" alt="Martin Poboril"/>
                     </div>
                     <div className="basis-2/3 md:mx-0 mx-8">
                         <p className="text-2xl">{t.tennNaia}</p>
@@ -93,7 +93,7 @@ export default function Tennis () {
             <section className="mb-8">
                 <div className="mx-auto px-16 container flex gap-16 md:flex-row flex-col items-center">
                     <div className="basis-1/3 w-1/2 md:mx-0mx-16">
-                        <img src="images/Czech_FedCup_team.jpg" alt="Czech Tennis FedCup Team"/>
+                        <img src="/Czech_FedCup_team.jpg" alt="Czech Tennis FedCup Team"/>
                     </div>
                     <div className="basis-2/3 md:mx-0 mx-8">
                         <p className="text-2xl">{t.fedcup}</p>
@@ -104,7 +104,7 @@ export default function Tennis () {
             <section className="mb-8">
                 <div className="mx-auto px-16 container flex gap-16 md:flex-row flex-col items-center">
                     <div className="basis-1/3 w-1/2 md:mx-0mx-16">
-                        <img src="images/Brenda_Fruhvirtova.jpg" alt="Tennis coach of Brenda Fruhvirtova"/>
+                        <img src="/Brenda_Fruhvirtova.jpg" alt="Tennis coach of Brenda Fruhvirtova"/>
                     </div>
                     <div className="basis-2/3 md:mx-0 mx-8">
                         <p className="text-2xl">{t.brenda}</p>

@@ -66,7 +66,7 @@ export default function WebDevelopment () {
                 <h2 className="text-4xl font-bold text-center">{t.aboutMe}</h2>
                 <div className="mx-auto px-16 container flex gap-16 md:flex-row flex-col items-center">
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
-                        <img src="images/Martin_Poboril.jpg" alt="Martin Poboril"/>
+                        <img src="/Martin_Poboril.jpg" alt="Martin Poboril"/>
                     </div>
                     <div className="basis-2/3 md:mx-0 mx-8">
                         <p className="mb-4">{t.aboutMeText}</p>
@@ -81,28 +81,28 @@ export default function WebDevelopment () {
                 <div className="container mx-auto p-16 flex gap-16 md:flex-row flex-col items-center">
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
                         <a href="https://www.jakubnicod.com/" target="_blank">
-                            <img src="images/Jakub_Nicod_Web.jpg" alt="Jakub Nicod"/>
+                            <img src="/Jakub_Nicod_Web.jpg" alt="Jakub Nicod"/>
                         </a>
                         <h2 className="text-white font-bold text-center mt-4 text-xl">Jakub Nicod</h2>
                     </div>
 
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
                         <a href="http://www.solincosports.eu/" target="_blank">
-                            <img src="images/Solinco_Web.jpg" alt="Solinco Tennis Products"/>
+                            <img src="/Solinco_Web.jpg" alt="Solinco Tennis Products"/>
                         </a>
                         <h2 className="text-white font-bold text-center mt-4 text-xl">Solinco</h2>
                     </div>
 
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
                         <a href="https://www.ctsv.cz/" target="_blank">
-                            <img src="images/ctsv.jpg" alt="Český tenisový svaz hráčů na vozíku"/>
+                            <img src="/ctsv.jpg" alt="Český tenisový svaz hráčů na vozíku"/>
                         </a>
                         <h2 className="text-white font-bold text-center mt-4 text-xl">{t.ctst}</h2>
                     </div>
 
                     <div className="mt-8 basis-1/3 w-1/2 md:mx-0mx-16">
                         <a href="https://tenis-hajnovka.cz/" target="_blank">
-                            <img src="images/hajnovka.jpg" alt="Tenisový klub Hajnovka Praha"/>
+                            <img src="/hajnovka.jpg" alt="Tenisový klub Hajnovka Praha"/>
                         </a>
                         <h2 className="text-white font-bold text-center mt-4 text-xl">Hajnovka</h2>
                     </div>
