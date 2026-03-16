@@ -6,15 +6,12 @@ export function Navigation() {
     return (
         <Navbar fluid rounded className={'border-6 border-gray-200 bg-gray-100'}>
             <NavbarBrand href="/">
-                <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Martin Poboril</span>
+                <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">{lang === "en" ? "Martin Poboril" : "Martin Pobořil"}</span>
             </NavbarBrand>
             <NavbarToggle />
             <NavbarCollapse>
-                {/*<NavbarLink href="/tennis">Tennis</NavbarLink>*/}
-                <NavbarLink as="button" onClick={toggleLang}>
-                    {lang === "en" ? "Tennis" : "Tenis"}
-                </NavbarLink>
-                <NavbarLink href="web-development">Web Developer</NavbarLink>
+                <NavbarLink href="tennis">{lang === "en" ? "Tennis" : "Tenis"}</NavbarLink>
+                <NavbarLink href="web-development">{lang === "en" ? "Web Developer" : "Webový vývojář"}</NavbarLink>
                 <NavbarLink as="button" onClick={toggleLang}>
                     {lang === "en" ? "Česky" : "English"}
                 </NavbarLink>
