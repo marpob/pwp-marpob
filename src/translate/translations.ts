@@ -170,6 +170,6 @@ export const translations = {
         },
         skills: ['HTML', 'CSS', 'React', 'Tailwind', 'JavaScript', 'TypeScript', 'PostgreSQL', 'Git / GitHub'],
     },
-} as const
+}
 
 export type Translations = typeof translations.en

@@ -39,6 +39,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
     // Cast resolves the Typescript union type issue from `as const` in translation
     const t = translations[lang] as unknown as Translations
+    //const t = translations[lang] as Translations
 
     return (
         <LanguageContext.Provider value={{ lang, toggleLang, t}}>
