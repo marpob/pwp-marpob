@@ -1,3 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap');
 @import "tailwindcss";
 @plugin "flowbite-react/plugin/tailwindcss";
 @source "../.flowbite-react/class-list.json";
+
+@theme {
+    /* Fonts */
+    --font-sans:  "DM Sans", system-ui, sans-serif;
+    --font-serif: "DM Serif Display", Georgia, serif;
+    --font-mono:  "DM Mono", "Courier New", monospace;
+
+    /* Brand colours */
+    --color-teal:         #1A7F6E;
+    --color-teal-light:   #E4F4F1;
+    --color-teal-dark:    #0F5A4E;
+    --color-teal-darker:  #094037;
+
+    --color-amber:        #D4820A;
+    --color-amber-light:  #FEF3DC;
+    --color-amber-dark:   #A8640A;
+
+    /* Site palette */
+    --color-site-bg:      #F8F7F3;
+    --color-site-surface: #FFFFFF;
+    --color-site-text:    #1E1E1C;
+    --color-site-muted:   #6B6B68;
+    --color-site-subtle:  #5A5A57;
+    --color-site-gray:    #EEEEE9;
+
+    /* Border colours */
+    --color-border-subtle:       rgba(30, 30, 28, 0.10);
+    --color-border-subtle-hover: rgba(30, 30, 28, 0.28);
+    --color-border-teal-faint:   rgba(26, 127, 110, 0.18);
+    --color-border-teal-hover:   rgba(26, 127, 110, 0.35);
+
+    /* Shadows */
+    --shadow-teal: 0 2px 18px rgba(26, 127, 110, 0.07);
+}
+
+@layer base {
+    body {
+        background-color: var(--color-site-bg);
+        font-family: var(--font-sans);
+        color: var(--color-site-text);
+        -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3 {
+        font-family: var(--font-serif);
+    }
+}

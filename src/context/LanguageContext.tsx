@@ -1,46 +1,50 @@
 import { createContext, useContext, useState, type ReactNode } from "react";
+import { translations, type Translations} from "../translate/translations.ts";
 
-type Language = "en" | "cz";
+type Language = 'en' | 'cs'
 
 interface LanguageContextType {
     lang: Language;
     toggleLang: () => void;
+    t: Translations
 }
 
 const LanguageContext = createContext<LanguageContextType | null>(null);
 
-function getInitialLanguage(): "en" | "cz" {
+function getInitialLanguage(): Language {
     // 1. Check if the user has a saved preference from a previous visit
-    const saved = localStorage.getItem("language");
-    if (saved === "en" || saved === "cz") {
+    const saved = localStorage.getItem('language')
+    if (saved === 'en' || saved === 'cs') {
         return saved;
     }
 
     // 2. No saved preference - check the browser's language setting navigator.language returns code like "cs", "cs-CZ", "en-US", etc.
-    if (navigator.language.startsWith("cs")) {
-        return "cz";
+    if (navigator.language.toLowerCase().startsWith('cs')) {
+        return 'cs'
     }
 
     // 3. Default to English
-    return "en";
+    return 'en'
 }
 
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
     const [lang, setLang] = useState<Language>(getInitialLanguage);
-    console.log(lang)
-    const toggleLang = () => {
-        setLang((prev) => {
-            const next = prev === "cz" ? "en" : "cz";
-            localStorage.setItem("language", next);
-            return next;
-        });
-    };
+
+    function toggleLang() {
+        const next: Language = lang === 'en' ? 'cs' : 'en'
+            localStorage.setItem("language", next)
+            setLang(next)
+        }
+
+    // Cast resolves the Typescript union type issue from `as const` in translation
+    const t = translations[lang] as unknown as Translations
+
     return (
-        <LanguageContext.Provider value={{ lang, toggleLang}}>
+        <LanguageContext.Provider value={{ lang, toggleLang, t}}>
             {children}
         </LanguageContext.Provider>
-    );
+    )
 }
 
 export function useLanguage(): LanguageContextType {
