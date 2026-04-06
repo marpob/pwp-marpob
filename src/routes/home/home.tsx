@@ -2,9 +2,10 @@ import { Link } from 'react-router'
 import { Badge, Button, Card } from 'flowbite-react'
 import { useLanguage } from '../../context/LanguageContext'
 import CourtCanvas from '../../components/CourtCanvas'
+import ContactForm from "../../components/ContactForm.tsx";
 
 export default function Home() {
-    const { t } = useLanguage()
+    const { lang, t } = useLanguage()
     const h = t.hero
     const a = t.about
 
@@ -144,17 +145,17 @@ export default function Home() {
             </section>
 
             {/* Contact form*/}
-            {/*<section id="contact" className="py-12">*/}
-            {/*    <p className="font-mono text-[11px] font-medium text-(--color-teal) tracking-[0.1em] uppercase mb-2">*/}
-            {/*        {lang === 'en' ? 'Send a message' : 'Napište mi'}*/}
-            {/*    </p>*/}
-            {/*    <h2 className="font-serif text-[28px] font-normal text-(--color-site-text) mb-8">*/}
-            {/*        {a.contactHeading}*/}
-            {/*    </h2>*/}
-            {/*    <div className="w-full max-w-[560px]">*/}
-            {/*        <ContactForm />*/}
-            {/*    </div>*/}
-            {/*</section>*/}
+            <section id="contact" className="py-12">
+                <p className="font-mono text-[11px] font-medium text-(--color-teal) tracking-[0.1em] uppercase mb-2">
+                    {lang === 'en' ? 'Send a message' : 'Napište mi'}
+                </p>
+                <h2 className="font-serif text-[28px] font-normal text-(--color-site-text) mb-8">
+                    {a.contactHeading}
+                </h2>
+                <div className="w-full max-w-[560px]">
+                    <ContactForm />
+                </div>
+            </section>
         </div>
     )
 }
