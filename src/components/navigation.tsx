@@ -41,12 +41,10 @@ export function Navigation() {
             fluid
             className="sticky top-0 z-50 border-b border-(--color-border-subtle) !bg-(--color-site-bg)/95 backdrop-blur-sm"
         >
+            <div className="w-full max-w-[900px] mx-auto px-6 flex items-center justify-between flex-wrap gap-3">
             <NavbarBrand as="span">
-                {/*<NavLink to="/" className="font-mono text-[13px] font-medium text-(--color-teal) tracking-[0.04em] no-underline">*/}
-                {/*    mp_dev*/}
-                {/*</NavLink>*/}
                 <NavLink to="/">
-                    <img src="/martin-poboril-tennis.svg" alt="Martin Poboril" width="36" height="36" />
+                    <img src="/martin-poboril-tennis.svg" alt="Martin Poboril" width="36" />
                 </NavLink>
             </NavbarBrand>
 
@@ -92,6 +90,7 @@ export function Navigation() {
                     {/*<NavLink to="/#contact" className={({ isActive }) => linkCls(isActive)}>{t.nav.contact}</NavLink>*/}
                 </div>
             </NavbarCollapse>
+            </div>
         </Navbar>
     )
 }

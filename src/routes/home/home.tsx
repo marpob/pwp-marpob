@@ -45,12 +45,12 @@ export default function Home() {
             </section>
 
             {/* Skill tags */}
-            <div className="flex gap-2 flex-wrap py-16 border-b border-(--color-border-subtle)">
+            <div className="flex gap-6 flex-wrap py-14 border-b border-(--color-border-subtle)">
                 {t.tags.tech.map((tag) => (
-                    <Badge key={tag} color="gray" className="font-mono tracking-[0.04em] text-lg">{tag}</Badge>
+                    <Badge key={tag} color="gray" className="font-mono tracking-[0.04em] text-base">{tag}</Badge>
                 ))}
                 {t.tags.tennis.map((tag) => (
-                    <Badge key={tag} color="success" className="font-mono tracking-[0.04em] text-lg">{tag}</Badge>
+                    <Badge key={tag} color="success" className="font-mono tracking-[0.04em] text-base">{tag}</Badge>
                 ))}
             </div>
 
