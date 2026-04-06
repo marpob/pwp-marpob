@@ -1,0 +1,20 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="2" y="2" width="116" height="116" rx="14" fill="#E4F4F1"/>
+  <rect x="2" y="2" width="116" height="116" rx="14" stroke="#1A7F6E" stroke-width="1.5"/>
+  <!-- Singles sidelines -->
+  <line x1="18" y1="2" x2="18" y2="118" stroke="#1A7F6E" stroke-width="0.75" stroke-opacity="0.4"/>
+  <line x1="102" y1="2" x2="102" y2="118" stroke="#1A7F6E" stroke-width="0.75" stroke-opacity="0.4"/>
+  <!-- Service boxes -->
+  <line x1="18" y1="36" x2="102" y2="36" stroke="#1A7F6E" stroke-width="0.75" stroke-opacity="0.35"/>
+  <line x1="18" y1="84" x2="102" y2="84" stroke="#1A7F6E" stroke-width="0.75" stroke-opacity="0.35"/>
+  <line x1="60" y1="36" x2="60" y2="84" stroke="#1A7F6E" stroke-width="0.75" stroke-opacity="0.35"/>
+  <!-- Net -->
+  <line x1="2" y1="60" x2="118" y2="60" stroke="#1A7F6E" stroke-width="2"/>
+  <circle cx="2"   cy="60" r="2.5" fill="#1A7F6E"/>
+  <circle cx="118" cy="60" r="2.5" fill="#1A7F6E"/>
+  <!-- MP initials -->
+  <text x="60" y="47" font-family="DM Serif Display, Georgia, serif" font-size="26" font-weight="400" fill="#0F5A4E" text-anchor="middle">MP</text>
+  <!-- dev tag -->
+  <text x="60" y="100" font-family="DM Mono, monospace" font-size="11" font-weight="500" fill="#0F5A4E" text-anchor="middle" letter-spacing="3">dev</text>
+</svg>

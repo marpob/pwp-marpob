@@ -30,7 +30,7 @@ export default function FooterBlack() {
     return (
         <Footer className="!bg-(--color-site-text) rounded-none border-t-0">
             <div className="w-full max-w-[900px] mx-auto px-6 py-10">
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 items-start">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 items-center">
 
                     {/* Brand */}
                     <div>
@@ -61,7 +61,7 @@ export default function FooterBlack() {
                     </div>
 
                     {/* Social icons */}
-                    <div className="flex items-center gap-5">
+                    <div className="flex items-center justify-end gap-5">
                         <a
                             href={SOCIAL_LINKS.github}
                             target="_blank"

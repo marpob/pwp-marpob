@@ -34,7 +34,7 @@ export default function Home() {
                         <Button as={Link} to="/web-development" className="!bg-(--color-teal) hover:!bg-(--color-teal-dark) focus:ring-0">
                             {h.cta}
                         </Button>
-                        <Button as="a" href="/martin-poboril-cv.pdf" download color="light" className="focus:ring-0">
+                        <Button as="a" href="/martin-poboril-cv-en.pdf" download color="light" className="focus:ring-0">
                             {h.cv}
                         </Button>
                     </div>
@@ -45,12 +45,12 @@ export default function Home() {
             </section>
 
             {/* Skill tags */}
-            <div className="flex gap-2 flex-wrap py-6 border-b border-(--color-border-subtle)">
+            <div className="flex gap-2 flex-wrap py-16 border-b border-(--color-border-subtle)">
                 {t.tags.tech.map((tag) => (
-                    <Badge key={tag} color="gray" className="font-mono tracking-[0.04em] text-[10px]">{tag}</Badge>
+                    <Badge key={tag} color="gray" className="font-mono tracking-[0.04em] text-lg">{tag}</Badge>
                 ))}
                 {t.tags.tennis.map((tag) => (
-                    <Badge key={tag} color="success" className="font-mono tracking-[0.04em] text-[10px]">{tag}</Badge>
+                    <Badge key={tag} color="success" className="font-mono tracking-[0.04em] text-lg">{tag}</Badge>
                 ))}
             </div>
 
@@ -143,7 +143,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Contact form */}
+            {/* Contact form*/}
             {/*<section id="contact" className="py-12">*/}
             {/*    <p className="font-mono text-[11px] font-medium text-(--color-teal) tracking-[0.1em] uppercase mb-2">*/}
             {/*        {lang === 'en' ? 'Send a message' : 'Napište mi'}*/}

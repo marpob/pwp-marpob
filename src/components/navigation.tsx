@@ -42,8 +42,11 @@ export function Navigation() {
             className="sticky top-0 z-50 border-b border-(--color-border-subtle) !bg-(--color-site-bg)/95 backdrop-blur-sm"
         >
             <NavbarBrand as="span">
-                <NavLink to="/" className="font-mono text-[13px] font-medium text-(--color-teal) tracking-[0.04em] no-underline">
-                    mp_dev
+                {/*<NavLink to="/" className="font-mono text-[13px] font-medium text-(--color-teal) tracking-[0.04em] no-underline">*/}
+                {/*    mp_dev*/}
+                {/*</NavLink>*/}
+                <NavLink to="/">
+                    <img src="/martin-poboril-tennis.svg" alt="Martin Poboril" width="36" height="36" />
                 </NavLink>
             </NavbarBrand>
 
