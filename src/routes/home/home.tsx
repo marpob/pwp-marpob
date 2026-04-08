@@ -167,7 +167,7 @@ export default function Home() {
                         <Button as="a" href="/martin-poboril-cv-en.pdf" download className="!bg-(--color-teal) hover:!bg-(--color-teal-dark) focus:ring-0">
                             {h.cv}
                         </Button>
-                        
+
                     </div>
                 </div>
             </section>
