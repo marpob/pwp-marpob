@@ -136,8 +136,8 @@ export default function Home() {
                                 {label}
                             </a>
                         ))}
-                        <Button as="a" href="/martin-poboril-cv-en.pdf" download
-                                className="!bg-(--color-teal) hover:!bg-(--color-teal-dark) focus:ring-0 mt-4 w-full">
+                        <Button as="a" href="/martin-poboril-cv-en.pdf" download color="light"
+                                className="focus:ring-0 mt-4 w-full">
                             {a.cv}
                         </Button>
                     </div>
