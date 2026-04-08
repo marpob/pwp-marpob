@@ -164,13 +164,9 @@ export default function Home() {
                             </a>
                         </div>
 
-
-                        <Button as="a" href="" download="/martin-poboril-cv-en.pdf">
-                            {a.cv}
+                        <Button as="a" href="/martin-poboril-cv-en.pdf" download className="!bg-(--color-teal) hover:!bg-(--color-teal-dark) focus:ring-0">
+                            {h.cv}
                         </Button>
-                        ))
-
-
 
                     </div>
                 </div>
