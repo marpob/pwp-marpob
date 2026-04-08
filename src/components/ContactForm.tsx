@@ -115,8 +115,8 @@ export default function ContactForm() {
                     placeholder={f.placeholderEmail}
                     color={errors.email ? 'failure' : 'gray'}
                 />
-                {errors.name && (
-                    <p className="text-[12px] text-red-500 mt-0.5">{errors.name}</p>
+                {errors.email && (
+                    <p className="text-[12px] text-red-500 mt-0.5">{errors.email}</p>
                 )}
             </div>
 
@@ -138,8 +138,8 @@ export default function ContactForm() {
                     color={errors.message ? 'failure' : 'gray'}
                     className="resize-none"
                 />
-                {errors.name && (
-                    <p className="text-[12px] text-red-500 mt-0.5">{errors.name}</p>
+                {errors.message && (
+                    <p className="text-[12px] text-red-500 mt-0.5">{errors.message}</p>
                 )}
             </div>
 

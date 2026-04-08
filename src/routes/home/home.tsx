@@ -35,7 +35,8 @@ export default function Home() {
                         <Button as={Link} to="/web-development" className="!bg-(--color-teal) hover:!bg-(--color-teal-dark) focus:ring-0">
                             {h.cta}
                         </Button>
-                        <Button as="a" href="/martin-poboril-cv-en.pdf" download="martin-poboril-cv-en.pdf" color="light" className="focus:ring-0">
+
+                        <Button as="a" href="/martin-poboril-cv-en.pdf" download color="light" className="focus:ring-0">
                             {h.cv}
                         </Button>
                     </div>
@@ -164,10 +165,13 @@ export default function Home() {
                         </div>
 
 
-                        <Button as="a" href="" download="/martin-poboril-cv-en.pdf"
-                                className="!bg-(--color-teal) hover:!bg-(--color-teal-dark) focus:ring-0 mt-4 w-full">
+                        <Button as="a" href="" download="/martin-poboril-cv-en.pdf">
                             {a.cv}
                         </Button>
+                        ))
+
+
+
                     </div>
                 </div>
             </section>
