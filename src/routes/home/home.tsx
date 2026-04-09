@@ -9,12 +9,6 @@ export default function Home() {
     const h = t.hero
     const a = t.about
 
-    // const contacts = [
-    //     { label: 'martin@martinpoboril.com', href: 'mailto:martin@martinpoboril.com' },
-    //     { label: 'github.com/martinpoboril', href: 'https://github.com/martinpoboril' },
-    //     { label: 'linkedin.com/in/martinpoboril', href: 'https://linkedin.com/in/martinpoboril' },
-    // ]
-
     return (
         <div className="max-w-[900px] mx-auto px-4 sm:px-6 pb-20">
 
@@ -128,21 +122,8 @@ export default function Home() {
                         {a.bio.map((para, i) => <p key={i}>{para}</p>)}
                     </div>
                     <div className="flex flex-col gap-2">
-                        {/*<h2 className="font-serif text-[22px] font-normal text-(--color-site-text) mb-2">{a.contactHeading}</h2>*/}
-                        {/*{contacts.map(({ label, href }) => (*/}
-                        {/*    <a key={label} href={href}*/}
-                        {/*       target={href.startsWith('http') ? '_blank' : undefined}*/}
-                        {/*       rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}*/}
-                        {/*       className="font-mono text-[12px] text-(--color-teal) hover:text-(--color-teal-dark) transition-colors no-underline break-all">*/}
-                        {/*        {label}*/}
-                        {/*    </a>*/}
-                        {/*))}*/}
-                        <h2 className="font-serif text-[22px] font-normal text-(--color-site-text) mb-2 text-center">{a.contactHeading}</h2>
 
-                        {/*<a href="mailto:martin@martinpoboril.com"*/}
-                        {/*   className="font-mono text-[12px] text-(--color-teal) hover:text-(--color-teal-dark) transition-colors no-underline break-all">*/}
-                        {/*    martin@martinpoboril.com*/}
-                        {/*</a>*/}
+                        <h2 className="font-serif text-[22px] font-normal text-(--color-site-text) mb-2 text-center">{a.contactHeading}</h2>
 
                         <div className="flex items-center gap-4 mt-3 justify-center">
                             {/* GitHub */}
@@ -164,7 +145,7 @@ export default function Home() {
                             </a>
                         </div>
 
-                        <Button as="a" href="/martin-poboril-cv-en.pdf" download className="!bg-(--color-teal) hover:!bg-(--color-teal-dark) focus:ring-0">
+                        <Button as="a" href="/martin-poboril-cv-en.pdf" download className="!bg-(--color-teal) hover:!bg-(--color-teal-dark) focus:ring-0 mt-4">
                             {h.cv}
                         </Button>
 

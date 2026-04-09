@@ -5,8 +5,8 @@ export const translations = {
         nav: { home: 'Home', webDev: 'Web Development', tennis: 'Tennis', contact: 'Contact' },
         hero: {
             eyebrow: 'Frontend Developer',
-            headline1: 'I build', headline2: 'the web.', headline3: 'Precisely.',
-            sub: 'Frontend developer with a decade of tennis coaching — I apply the same precision, team work, and systems thinking to web development as I do to tennis coaching.',
+            headline1: 'I build', headline2: 'the web.', headline3: 'with Precision',
+            sub: 'Frontend developer with more than a decade of tennis coaching — I apply the same precision, team work, and systems thinking to web development as I do to tennis coaching.',
             cta: 'View projects', cv: 'Download CV', webDevLink: 'Web Development', tennisLink: 'Tennis Coaching',
         },
         projects: {
@@ -65,7 +65,7 @@ export const translations = {
                 { title: 'Precision',        desc: 'The details matter. On court and on screen.' },
             ],
         },
-        tags: { tech: ['React', 'TypeScript', 'Vite', 'Node.js', 'Tailwind', 'CSS', 'REST APIs'], tennis: ['Tennis Coach', 'Sports Analytics', 'Player Development'] },
+        tags: { tech: ['HTML', 'Javascript', 'Postgresql', 'React', 'TypeScript', 'Vite', 'Node.js', 'Tailwind', 'CSS', 'REST APIs', 'Node', 'Express', 'Git/GitHub', 'Wordpress', 'Elementor'], tennis: ['Tennis Coach', 'Sports Analytics', 'Player Development', 'Tennis Data Analyst'] },
         about: {
             label: 'About & Contact', contactHeading: "Let's work together", cv: 'Download CV',
             bio: [
