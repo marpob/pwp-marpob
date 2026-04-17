@@ -65,7 +65,7 @@ export const translations = {
                 { title: 'Precision',        desc: 'The details matter. On court and on screen.' },
             ],
         },
-        tags: { tech: ['HTML', 'Javascript', 'Postgresql', 'React', 'TypeScript', 'Vite', 'Node.js', 'Tailwind', 'CSS', 'REST APIs', 'Node', 'Express', 'Git/GitHub', 'Wordpress', 'Elementor'], tennis: ['Tennis Coach', 'Sports Analytics', 'Player Development', 'Tennis Data Analyst'] },
+        tags: { tech: ['HTML', 'Javascript', 'Postgresql', 'React', 'TypeScript', 'Vite', 'Node.js', 'Tailwind', 'CSS', 'REST APIs', 'Node', 'Express', 'Git/GitHub', 'Wordpress', 'Elementor', 'Claude Code'], tennis: ['Tennis Coach', 'Sports Analytics', 'Player Development', 'Tennis Data Analyst'] },
         about: {
             label: 'About & Contact', contactHeading: "Let's work together", cv: 'Download CV',
             bio: [
@@ -150,7 +150,7 @@ export const translations = {
                 { title: 'Přesnost',          desc: 'Na detailech záleží. Na kurtu i na obrazovce.' },
             ],
         },
-        tags: { tech: ['HTML', 'Javascript', 'Postgresql', 'React', 'TypeScript', 'Vite', 'Node.js', 'Tailwind', 'CSS', 'REST APIs', 'Node', 'Express', 'Git/GitHub', 'Wordpress', 'Elementor'], tennis: ['Tenisový trenér', 'Sportovní analytika', 'Rozvoj hráčů', 'Datový analytik'] },
+        tags: { tech: ['HTML', 'Javascript', 'Postgresql', 'React', 'TypeScript', 'Vite', 'Node.js', 'Tailwind', 'CSS', 'REST APIs', 'Node', 'Express', 'Git/GitHub', 'Wordpress', 'Elementor', 'Claude Code'], tennis: ['Tenisový trenér', 'Sportovní analytika', 'Rozvoj hráčů', 'Datový analytik'] },
         about: {
             label: 'O mně & Kontakt', contactHeading: 'Pojďme spolupracovat', cv: 'Stáhnout CV',
             bio: [
