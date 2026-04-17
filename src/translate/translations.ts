@@ -150,7 +150,7 @@ export const translations = {
                 { title: 'Přesnost',          desc: 'Na detailech záleží. Na kurtu i na obrazovce.' },
             ],
         },
-        tags: { tech: ['React', 'TypeScript', 'Vite', 'Node.js', 'CSS / Tailwind', 'REST API'], tennis: ['Tenisový trenér', 'Sportovní analytika', 'Rozvoj hráčů'] },
+        tags: { tech: ['HTML', 'Javascript', 'Postgresql', 'React', 'TypeScript', 'Vite', 'Node.js', 'Tailwind', 'CSS', 'REST APIs', 'Node', 'Express', 'Git/GitHub', 'Wordpress', 'Elementor'], tennis: ['Tenisový trenér', 'Sportovní analytika', 'Rozvoj hráčů', 'Datový analytik'] },
         about: {
             label: 'O mně & Kontakt', contactHeading: 'Pojďme spolupracovat', cv: 'Stáhnout CV',
             bio: [
